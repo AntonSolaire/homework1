@@ -28,23 +28,49 @@
 // 32679 -> 6
 
 
-void ThirdNumber (int num1)
+// void ThirdNumber (int num1)
+// {
+//     if (num1<100){
+//         Console.WriteLine ($" У {num1} нет третьей цифры ");
+//     }
+//     else {
+//         if (num1>100 && num1<1000){
+//         int sot = num1%10;
+//         Console.WriteLine ($"Третья цифра в числе {num1} это {sot}");
+//         }
+//     }
+
+// }
+
+// Console.WriteLine ("Введите число");
+// int num1 = Convert.ToInt32(Console.ReadLine ());
+// ThirdNumber(num1);
+
+
+// Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+// 6 -> да
+// 7 -> да
+// 1 -> нет
+
+
+
+void weekend (int num)
 {
-    if (num1<100){
-        Console.WriteLine ($" У {num1} нет третьей цифры ");
+    if (num > 7) {
+        Console.WriteLine("Такого дня недели нет");
     }
     else {
-        if (num1>100 && num1<1000){
-        int sot = num1%10;
-        Console.WriteLine ($"Третья цифра в числе {num1} это {sot}");
-        }
+    if (num < 6)
+    {
+        Console.WriteLine("Это не выходной");
     }
-  
+    else
+        Console.WriteLine("Это выходной");
+    }
 }
+Console.WriteLine("Введите цифру, обозначающую день недели");
+int num = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine ("Введите число");
-int num1 = Convert.ToInt32(Console.ReadLine ());
-ThirdNumber(num1);
-
-
+weekend(num);
 
